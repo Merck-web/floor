@@ -1,0 +1,49 @@
+.bg {
+  background: linear-gradient(
+      0deg,
+      rgba(32, 33, 36, 0.4),
+      rgba(32, 33, 36, 0.4)
+    ),
+    url("../public/bg-best.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+}
+.title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.bests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.card {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+}
+.card div {
+  padding-top: 22px;
+}
+.card span {
+  font-weight: bold;
+}
