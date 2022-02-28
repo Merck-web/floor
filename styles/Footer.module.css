@@ -1,0 +1,52 @@
+.footer {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  padding: 39px 190px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 120px minmax(228px, 500px);
+  grid-template-areas: "logo text mail instagram whatsapp";
+  align-items: center;
+  color: #202124;
+}
+.logo {
+  grid-area: logo;
+  max-width: 120px;
+}
+.text {
+  grid-area: text;
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 177px;
+}
+.mail {
+  grid-area: mail;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 40px;
+}
+.whatsapp {
+  grid-area: whatsapp;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.whatsapp .number {
+  margin-left: 10px;
+}
+.instagram {
+  grid-area: instagram;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.instagram .instText {
+  margin-left: 10px;
+}
