@@ -16,18 +16,18 @@ fastify.post('/email', async (request, response) => {
         console.log(email, name, phone)
         let emailAccount = await nodemailer.createTestAccount()
         let trasnporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
+            host: 'mail.nic.ru',
             port: 465,
             secure: true,
             auth: {
-                user: '88schmakov88@gmail.com',
-                pass: 'q20047878'
+                user: 'info@recens.flowers',
+                pass: 'djk0xnc1fpg.cgz@GBH'
             }
         })
         await trasnporter.sendMail({
-            from: '"Company title here"',
+            from: 'info@recens.flowers',
             to: `${request.body.email}`,
-            subject: 'Text',
+            subject: 'Новая заявка',
             text: `Some text`
         })
         response.send({"result": "success"})
@@ -38,10 +38,10 @@ fastify.post('/email', async (request, response) => {
 
 })
 
-fastify.listen((3001, function (err, address) {
+fastify.listen(3001, function (err, address) {
     if (err) {
         fastify.log.error(err)
         process.exit(1)
     }
     fastify.log.info(`server listening on ${address}`)
-}))
+})
