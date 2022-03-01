@@ -13,17 +13,17 @@ function Carousel() {
     <>
       <div className='slider'>
         <div className={styles.navigation}>
-          <a className={styles.dots} href='#slide-1'></a>
-          <a className={styles.dots} href='#slide-2'></a>
-          <a className={styles.dots} href='#slide-3'></a>
-          <a className={styles.dots} href='#slide-4'></a>
-          <a className={styles.dots} href='#slide-5'></a>
-          <a className={styles.dots} href='#slide-6'></a>
-          <a className={styles.dots} href='#slide-7'></a>
+          <a className={styles.dots} href='#slide-10'></a>
+          <a className={styles.dots} href='#slide-20'></a>
+          <a className={styles.dots} href='#slide-30'></a>
+          <a className={styles.dots} href='#slide-40'></a>
+          <a className={styles.dots} href='#slide-50'></a>
+          <a className={styles.dots} href='#slide-60'></a>
+          <a className={styles.dots} href='#slide-70'></a>
         </div>
 
         <div className='mobile-slides'>
-          <div id='slide-1'>
+          <div id='slide-10'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons5 />
@@ -34,7 +34,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-2'>
+          <div id='slide-20'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons4 />
@@ -44,7 +44,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-3'>
+          <div id='slide-30'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons7 />
@@ -54,7 +54,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-4'>
+          <div id='slide-40'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons6 />
@@ -65,7 +65,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-5'>
+          <div id='slide-50'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons1 />
@@ -75,7 +75,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-6'>
+          <div id='slide-60'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons3 />
@@ -85,7 +85,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-7'>
+          <div id='slide-70'>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons2 />

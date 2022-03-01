@@ -27,6 +27,7 @@
   font-size: 14px;
   line-height: 20px;
   margin-right: 40px;
+  cursor: pointer;
 }
 .whatsapp {
   grid-area: whatsapp;
@@ -35,6 +36,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 .whatsapp .number {
   margin-left: 10px;
@@ -46,6 +48,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 .instagram .instText {
   margin-left: 10px;
@@ -63,7 +66,6 @@
       "logo mail instagram whatsapp";
   }
   .text {
-    padding-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;

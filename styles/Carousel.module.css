@@ -63,7 +63,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .capture {
   font-family: Poppins;
@@ -77,7 +77,7 @@
 .navigation {
   position: absolute;
   left: 190px;
-  bottom: 40px;
+  bottom: 10px;
   z-index: 30;
 }
 .dots {
@@ -101,19 +101,12 @@
 }
 @media (max-width: 1200px) {
   .content {
-    top: 40px;
+    top: 10px;
     left: 34px;
   }
   .navigation {
     left: 34px;
-  }
-}
-@media (max-width: 620px) {
-  .title,
-  .title2 {
-    font-size: 24px;
-    line-height: 32px;
-    padding-bottom: 10px;
+    bottom: 0;
   }
   .description2,
   .description {
@@ -121,6 +114,13 @@
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 20px;
+  }
+  .title,
+  .title2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
   }
   .capture {
     font-size: 12px;

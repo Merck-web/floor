@@ -41,10 +41,14 @@ function Header() {
       <div className={styles.text}>
         Доставка цветов по Москве и Московской области
       </div>
-      <div className={styles.mail}>info@recens.ru </div>
+      <a href='mailto:info@recens.ru' className={styles.mail}>
+        info@recens.ru
+      </a>
       <div className={styles.whatsapp}>
         <WhatsApp />
-        <div className={styles.number}> +7 977 993 0269</div>
+        <a href='tel:+79779930269' className={styles.number}>
+          +7 977 993 0269
+        </a>
       </div>
       <div className={styles.btn}>Обратный звонок</div>
       <button onClick={handleBurgerMenu} className={styles.btnBurger}>

@@ -3,6 +3,7 @@ import styles from "../../styles/Form.module.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import axios from "axios";
 
 function Form() {
   const validationSchema = Yup.object().shape({
@@ -10,13 +11,22 @@ function Form() {
   });
   const formOptions = { resolver: yupResolver(validationSchema) };
 
-  // get functions to build form with useForm() hook
   const { register, handleSubmit, reset, formState } = useForm(formOptions);
   const { errors } = formState;
 
-  function onSubmit(data) {
-    // display form data on success
-    alert("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
+  async function onSubmit(dataAll) {
+    console.log(dataAll.name, dataAll.mail,dataAll.phone);
+
+    if (dataAll.acceptTerms) {
+      await axios.post(`http://127.0.0.1:61701/email`, {
+        name: dataAll.name,
+        email: dataAll.mail,
+        phone: dataAll.phone
+      });
+    } else {
+      alert("SUCCESS!! :-)\n\n" + JSON.stringify(dataAll, null, 4));
+    }
+    reset();
     return false;
   }
   return (
@@ -27,9 +37,17 @@ function Form() {
           Оставьте заявку и получите гарантированную скидку на первый заказ
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-          <input type='text' placeholder='Ваше имя' />
-          <input type='mail' placeholder='Электронная почта' />
-          <input type='phone' placeholder='Номер телефона' />
+          <input type='text' placeholder='Ваше имя' {...register("name")} />
+          <input
+            type='mail'
+            placeholder='Электронная почта'
+            {...register("mail")}
+          />
+          <input
+            type='phone'
+            placeholder='Номер телефона'
+            {...register("phone")}
+          />
           <div className={styles.check}>
             <input
               name='acceptTerms'
@@ -40,7 +58,9 @@ function Form() {
                 errors.acceptTerms ? "is-invalid" : ""
               }`}
             />
-            <label>Согласен с <span>правилами</span> обработки персональных данных</label>
+            <label>
+              Согласен с <span>правилами</span> обработки персональных данных
+            </label>
           </div>
           <button type='submit' className={styles.btn}>
             Отправить

@@ -6,6 +6,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 a {
   color: inherit;
@@ -49,7 +52,6 @@ a {
   flex-shrink: 0;
   width: 100%;
   height: 604px;
-  margin-right: 50px;
   border-radius: 10px;
   background: #eee;
   transform-origin: center center;
@@ -141,7 +143,6 @@ img {
   flex-shrink: 0;
   width: 100%;
   height: 604px;
-  margin-right: 50px;
   border-radius: 10px;
   background: #eee;
   background-color: white;
@@ -205,10 +206,10 @@ img {
 /* Don't need button navigation */
 @media (max-width: 1200px) {
   .slides > div {
-    height: 400px;
+    height: 322px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .mobile-slides > div {
     height: 200px;
   }

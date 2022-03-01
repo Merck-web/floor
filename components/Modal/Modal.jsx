@@ -1,6 +1,7 @@
 import React from "react";
 import Instagram from "../../styles/img/Instagram.svg";
 import styles from "../../styles/Header.module.css";
+import Link from "next/link";
 function Modal() {
   return (
     <>
@@ -28,11 +29,15 @@ function Modal() {
             </a>
           </li>
         </ul>
-        <div className={styles.mailModal}>info@recens.ru </div>
-        <div className={styles.instagram}>
-          <Instagram />
-          <div className={styles.instText}>instalink</div>
-        </div>
+        <a href='mailto:info@recens.ru' className={styles.mailModal}>
+          info@recens.ru
+        </a>
+        <Link href='https://www.instagram.com/'>
+          <div className={styles.instagram}>
+            <Instagram />
+            <div className={styles.instText}>instalink</div>
+          </div>
+        </Link>
       </div>
     </>
   );
