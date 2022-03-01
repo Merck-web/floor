@@ -3,6 +3,7 @@ import styles from "../styles/Footer.module.css";
 import LogoMain from "../styles/img/Logo.svg";
 import Instagram from "../styles/img/Instagram.svg";
 import WhatsApp from "../styles/img/WhatsApp.svg";
+import { format } from "date-fns";
 
 function Footer() {
   return (
@@ -22,6 +23,9 @@ function Footer() {
         <div className={styles.whatsapp}>
           <WhatsApp />
           <div className={styles.number}> +7 977 993 0269</div>
+        </div>
+        <div className={styles.copyright}>
+          © {format(new Date(), "yyyy")} RECENS. Все права защищены.
         </div>
       </footer>
     </div>

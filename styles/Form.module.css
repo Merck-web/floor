@@ -1,0 +1,112 @@
+.bg {
+  background: url("../public/bg-form.png"), #f9edf8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #202124;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+.description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 37px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+.form input {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #d3c4d2;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.form input::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ad92ab;
+}
+.check {
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  padding-bottom: 40px;
+}
+.check input {
+  max-width: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.check label {
+  max-width: 236px;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #202124;
+  text-align: left;
+  margin-left: 10px;
+}
+.check label span {
+  text-decoration: underline;
+}
+.btn {
+  padding: 10px 20px;
+  background: #ff4e6d;
+  box-shadow: 0px 16px 20px -10px rgba(255, 78, 109, 0.2);
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 80px;
+}
+@media (max-width: 400px) {
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}

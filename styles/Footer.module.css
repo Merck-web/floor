@@ -50,3 +50,78 @@
 .instagram .instText {
   margin-left: 10px;
 }
+.copyright {
+  display: none;
+}
+@media (max-width: 1313px) {
+  .footer {
+    padding: 39px 34px;
+    grid-template-columns: 120px 168px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "text text text text"
+      "logo mail instagram whatsapp";
+  }
+  .text {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    max-width: 1313px;
+    width: 100%;
+  }
+  .text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -34px;
+    width: 100vw;
+    height: 1px;
+    opacity: 0.1;
+    border: 1px solid #202124;
+  }
+  .mail {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 664px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "text"
+      "logo"
+      "whatsapp"
+      "mail"
+      "instagram"
+      "copyright";
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .text,
+  .logo,
+  .mail,
+  .instagram,
+  .whatsapp,
+  .copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    max-width: none;
+    width: 100%;
+  }
+  .copyright {
+    grid-area: copyright;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202124;
+    opacity: 0.4;
+  }
+}

@@ -1,4 +1,6 @@
 .title {
+  font-family: Playfair Display;
+  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 48px;
@@ -42,9 +44,74 @@
   text-align: center;
   margin-right: 20px;
 }
-.card:last-child{
-    margin-right: 0;
+.card:last-child {
+  margin-right: 0;
 }
 .text {
   margin-top: 20px;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .row1 {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 35px;
+    justify-content: center;
+    gap: 35px;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .desc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .container {
+    padding: 10px 0;
+  }
+  .mobile .text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #202124;
+  }
+  .content {
+    position: relative;
+  }
+  .navigation {
+    position: absolute;
+    left: calc((100% / 2) - 210px / 2);
+    bottom: -20px;
+    z-index: 30;
+  }
+  .dots {
+    width: 20px;
+    height: 3px;
+    margin-right: 30px;
+    position: relative;
+  }
+  .dots::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #ff4e6d;
+    border-radius: 2px;
+  }
 }

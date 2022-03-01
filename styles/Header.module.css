@@ -43,14 +43,154 @@
   grid-area: btn;
   margin-left: 40px;
   padding: 10px 20px;
+  max-width: 204px;
   border: 1px solid #202124;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in;
+  text-align: center;
 }
 .btn:hover {
   background-color: #202124;
   color: #fff;
   border: 1px solid #fff;
   transition: all 0.5s ease-in;
+}
+.btnBurger {
+  display: none;
+}
+.mobilelogo {
+  display: none;
+}
+@media (max-width: 1313px) {
+  .header {
+    padding: 39px 34px;
+    grid-template-columns: 120px 168px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "logo mail whatsapp btn"
+      "text text text text";
+  }
+  .text {
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    max-width: 1313px;
+    width: 100%;
+    padding-bottom: 14px;
+  }
+  .text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -34px;
+    width: 100vw;
+    height: 1px;
+    opacity: 0.1;
+    border: 1px solid #202124;
+  }
+  .mail {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 710px) {
+  .header {
+    padding: 39px 34px;
+    grid-template-columns: 120px 119px;
+  }
+  .mail {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 664px) {
+  .header {
+    padding: 39px 34px;
+    grid-template-columns: 120px 168px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "logo whatsapp whatsapp btnBurger"
+      "text text text text";
+  }
+  .btnBurger {
+    grid-area: btnBurger;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .whatsapp {
+    display: flex;
+    justify-content: center;
+  }
+  .mail,
+  .btn {
+    display: none;
+  }
+  .modal {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 653px;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btnModal {
+    padding: 10px 78px;
+    background: #ff4e6d;
+    box-shadow: 0px 16px 20px -10px rgba(255, 78, 109, 0.2);
+    border-radius: 20px;
+    color: white;
+    margin-top: 30px;
+  }
+  .list {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #ff4e6d;
+  }
+  .list li {
+    margin-bottom: 30px;
+  }
+  .mailModal {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202124;
+  }
+  .instagram {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 140px;
+  }
+  .instText {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 39px 2px 10px;
+  }
+  .logo svg {
+    width: 120px;
+  }
+  .header {
+    grid-template-columns: 80px 100px auto;
+  }
+  .text::before {
+    left: -10px;
+  }
 }
