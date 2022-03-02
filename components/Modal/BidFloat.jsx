@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from 'react'
-import styles from "../../styles/Header.module.css";
+import styles from "../../styles/Carousel.module.css";
 import { Dialog, Transition } from '@headlessui/react'
 
-export default function Example() {
+export default function Example({children}) {
   const [open, setOpen] = useState(false)
 
   return (
       <>
-        <button className={styles.btn} onClick={() => setOpen(true)}>Обратный звонок</button>
+        <button className={styles.btnfloat} onClick={() => setOpen(true)}>{children}</button>
         <Transition.Root show={open} as={Fragment}>
           <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={setOpen}>
             <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -38,7 +38,7 @@ export default function Example() {
               >
                 <div className="relative inline-block align-bottom bg-transparent overflow-hidden transform transition-all sm:align-middle sm:max-w-sm sm:w-full">
                   <div>
-                    <iframe className="w-full h-70" scrolling="no" allowtransparency src='https://forms.amocrm.ru/forms/html/form_906022_6ca2a840719a84958d6968d92a9174a1.html?date=1646220235#{"user_origin":{"datetime":"Wed Mar 02 2022 14:23:55 GMT+0300 (Москва, стандартное время)","referer":"http://localhost:3000/"},"is_modal":false,"success_message":"","has_redirect":"","is_dark_bg":true,"utm":{"source":"","medium":"","content":"","campaign":"","term":""},"ga":{},"location":"http://localhost:3000/","dp":{}}'></iframe>
+                    <iframe className="w-full h-71" scrolling="no" allowtransparency src='https://forms.amocrm.ru/forms/html/form_899389_83a82e9f9d3c37b7266c37f7a58d20df.html?date=1646224165#{"user_origin":{"datetime":"Wed Mar 02 2022 15:29:25 GMT+0300 (Москва, стандартное время)","referer":""},"is_modal":false,"success_message":"","has_redirect":"","is_dark_bg":true,"utm":{"source":"","medium":"","content":"","campaign":"","term":""},"ga":{},"location":"http://localhost:3000/","dp":{}}'></iframe>
                   </div>
                 </div>
               </Transition.Child>

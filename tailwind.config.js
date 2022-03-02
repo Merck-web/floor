@@ -16,6 +16,10 @@ module.exports = {
           '0%' : {transform : 'translateX(100%)'},
           '100%' : {transform : 'translateX(0)'},
         },
+      },
+      height: {
+        '70': '17rem',
+        '71': '21.5rem'
       }
     },
   },

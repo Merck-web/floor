@@ -10,18 +10,19 @@ import MobileLogo from "../public/logoMobile.svg";
 
 function Header() {
   const [burger, setBurger] = useState(false);
-  const [windowWidth, setwindowWidth] = useState(false);
+  const [windowWidth, setwindowWidth] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("on", transitionNavBar);
-    return () => window.removeEventListener("on", transitionNavBar);
+    transitionNavBar();
+    window.addEventListener("resize", transitionNavBar);
+    return () => window.removeEventListener("resize", transitionNavBar);
   });
 
   const transitionNavBar = () => {
     if (window.screen.width < 400) {
-      setwindowWidth(true);
-    } else {
       setwindowWidth(false);
+    } else {
+      setwindowWidth(true);
     }
   };
 
@@ -42,16 +43,15 @@ function Header() {
       <div className={styles.text}>
         Доставка цветов по Москве и Московской области
       </div>
-      <a href='mailto:info@recens.ru' className={styles.mail}>
-        info@recens.ru
+      <a href='mailto:info@recens.flowers' className={styles.mail}>
+        info@recens.flowers
       </a>
       <div className={styles.whatsapp}>
         <WhatsApp />
-        <a href='tel:+79779930269' className={styles.number}>
+        <a href='https://wa.me/79779930269' className={styles.number}>
           +7 977 993 0269
         </a>
       </div>
-      <button className={styles.btn}>Обратный звонок</button>
       <Call />
       <button onClick={handleBurgerMenu} className={styles.btnBurger}>
         {burger ? <CloseIcon /> : <Burger />}
