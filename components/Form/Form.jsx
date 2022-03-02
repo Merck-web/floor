@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import axios from "axios";
-import Link from "next/Link";
 
 function Form() {
   const validationSchema = Yup.object().shape({
@@ -61,7 +60,7 @@ function Form() {
             />
             <label>
             {/* https://tilda.education/articles-personal-data-law */}
-              Согласен с <Link href="https://tilda.education/articles-personal-data-law"><a>правилами</a></Link> обработки персональных данных
+              Согласен с <a href="https://tilda.education/articles-personal-data-law"><a>правилами</a></a> обработки персональных данных
             </label>
           </div>
           <button type='submit' className={styles.btn}>
