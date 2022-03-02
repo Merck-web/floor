@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "../../styles/Carousel.module.css";
+import Bid from "../Modal/Bid"
 
 function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
-  
+
   return (
     <>
       <div className='slider'>
@@ -23,7 +24,7 @@ function Carousel() {
                 Авторская флористическая мастерская, оказывает полный комплекс
                 услуг по обслуживанию компаний в Москве.
               </div>
-              <button className={styles.btn}>Оставить заявку</button>
+              <Bid>Оставить заявку</Bid>
               <div className={styles.capture}>
                 * Оставьте заявку сейчас и получите подарок !
               </div>
@@ -37,7 +38,7 @@ function Carousel() {
                 Авторская флористическая мастерская, оказывает полный комплекс
                 услуг по обслуживанию компаний в Москве.
               </div>
-              <button className={styles.btn}>Получить презентацию</button>
+              <Bid>Получить презентацию</Bid>
             </div>
           </div>
           <div id='slide-3'>
@@ -49,7 +50,7 @@ function Carousel() {
                 магазинов, входных зон, а также продумаем и реализуем декор
                 кабинетов руководителей, персонала и переговорных комнат
               </div>
-              <button className={styles.btn}>Получить презентацию</button>
+              <Bid>Получить презентацию</Bid>
             </div>
           </div>
           <div id='slide-4'>
@@ -60,7 +61,7 @@ function Carousel() {
                 декор для Ваших корпоративных активностей: презентации,
                 выставки, мероприятия, дни рождения и другие различные праздники
               </div>
-              <button className={styles.btn}>Получить презентацию</button>
+              <Bid>Получить презентацию</Bid>
             </div>
           </div>
         </div>
