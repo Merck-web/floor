@@ -9,7 +9,7 @@ fastify.post('/email', async (request, response) => {
     try {
         const email = request.body.email
         const name = request.body.name
-        const phone = request.body.number
+        const phone = request.body.phone
         if (!email) {
             response.send({"error": "Email is not received"})
         }
@@ -20,15 +20,17 @@ fastify.post('/email', async (request, response) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'info@recens.flowers',
-                pass: 'djk0xnc1fpg.cgz@GBH'
+                user: "postmaster@recens.flowers",
+                pass: "jhd3dzw!JKT_ebd0kcx"
+                // user: 'info@recens.flowers',
+                // pass: 'djk0xnc1fpg.cgz@GBH'
             }
         })
         await trasnporter.sendMail({
-            from: 'info@recens.flowers',
-            to: `${request.body.email}`,
+            from: 'postmaster@recens.flowers',
+            to: 'info@recens.flowers',
             subject: 'Новая заявка',
-            text: `Some text`
+            text: `От: ${name}\n\rТелефон: ${phone}\n\rEmail: ${email}`
         })
         response.send({"result": "success"})
     } catch (e) {

@@ -19,7 +19,7 @@ function Form() {
     console.log(dataAll.name, dataAll.mail,dataAll.phone);
 
     if (dataAll.acceptTerms) {
-      await axios.post(`http://127.0.0.1:3001/email`, {
+      await axios.post(`api/email`, {
         name: dataAll.name,
         email: dataAll.mail,
         phone: dataAll.phone

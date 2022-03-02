@@ -4,6 +4,7 @@ import LogoMain from "../styles/img/Logo.svg";
 import WhatsApp from "../styles/img/WhatsApp.svg";
 import Burger from "./BtnMobile/BtnMobile"
 import Modal from "./Modal/Modal";
+import Call from "./Modal/Call";
 import CloseIcon from "../public/close-burger.svg";
 import MobileLogo from "../public/logoMobile.svg";
 
@@ -50,7 +51,8 @@ function Header() {
           +7 977 993 0269
         </a>
       </div>
-      <div className={styles.btn}>Обратный звонок</div>
+      <button className={styles.btn}>Обратный звонок</button>
+      <Call />
       <button onClick={handleBurgerMenu} className={styles.btnBurger}>
         {burger ? <CloseIcon /> : <Burger />}
       </button>
