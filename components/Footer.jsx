@@ -36,6 +36,7 @@ function Footer() {
           © {format(new Date(), "yyyy")} RECENS. Все права защищены.
         </div>
       </footer>
+      {/* eslint-disable-next-line @next/next/inline-script-id */}
       <Script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{

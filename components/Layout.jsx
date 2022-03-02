@@ -1,9 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
-import {NextScript} from "next/document";
-import Script from "next/script"
-import {absoluteSize} from "tailwindcss/lib/util/dataTypes";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
