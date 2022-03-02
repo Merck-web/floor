@@ -18,11 +18,13 @@
   grid-template-columns: 250px 250px 250px 250px;
   margin-bottom: 35px;
   justify-content: center;
+  align-items: baseline;
 }
 .row2 {
   display: grid;
   grid-template-columns: 250px 250px 250px;
   justify-content: center;
+  align-items: baseline;
 }
 .row1,
 .row2 {
