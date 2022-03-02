@@ -40,8 +40,6 @@ export default function Layout({ title, keywords, description, children }) {
       </div>
       <div>{children}</div>
       <Footer />
-
-
     </div>
   );
 }
