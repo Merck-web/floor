@@ -9,24 +9,24 @@ function Modal() {
         <div className={styles.btnModal}>Оставить заявку</div>
         <ul className={styles.list}>
           <li>
-            <a>
+            <button className={styles.btnInModal}>
               Презентация <br /> для event агентств
-            </a>
+            </button>
           </li>
           <li>
-            <a>
+            <button className={styles.btnInModal}>
               Презентация <br /> для корпораций
-            </a>
+            </button>
           </li>
           <li>
-            <a>
+            <button className={styles.btnInModal}>
               Презентация <br /> для компаний
-            </a>
+            </button>
           </li>
           <li>
-            <a>
+            <button className={styles.btnInModal}>
               Презентация для <br /> гостиниц или ресторанов
-            </a>
+            </button>
           </li>
         </ul>
         <a href='mailto:info@recens.ru' className={styles.mailModal}>

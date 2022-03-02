@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/Header.module.css";
 import LogoMain from "../styles/img/Logo.svg";
 import WhatsApp from "../styles/img/WhatsApp.svg";
-import BurgerIcon from "../public/Burger.svg";
+import Burger from "./BtnMobile/BtnMobile"
 import Modal from "./Modal/Modal";
 import CloseIcon from "../public/close-burger.svg";
 import MobileLogo from "../public/logoMobile.svg";
@@ -52,7 +52,7 @@ function Header() {
       </div>
       <div className={styles.btn}>Обратный звонок</div>
       <button onClick={handleBurgerMenu} className={styles.btnBurger}>
-        {burger ? <CloseIcon /> : <BurgerIcon />}
+        {burger ? <CloseIcon /> : <Burger />}
       </button>
       {burger && <Modal />}
     </nav>

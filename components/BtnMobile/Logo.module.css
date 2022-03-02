@@ -1,0 +1,35 @@
+.logotype {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 18px;
+  height: 21px;
+}
+.line {
+  display: block;
+  position: relative;
+  width: 9px;
+  height: 3px;
+  background-color: #ff4e6d;
+}
+.line::after,
+.line::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background-color: #ff4e6d;
+}
+.line::after {
+  top: 6px;
+  right: 0;
+}
+.line::before {
+  bottom: 6px;
+  right: 0;
+}
+.line::after,
+.line::before,
+.line {
+  border-radius: 20px;
+}

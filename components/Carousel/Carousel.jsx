@@ -3,6 +3,7 @@ import styles from "../../styles/Carousel.module.css";
 
 function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+  
   return (
     <>
       <div className='slider'>

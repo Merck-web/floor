@@ -86,7 +86,7 @@
   text-align: left;
   margin-left: 10px;
 }
-.check label span {
+.check label a {
   text-decoration: underline;
 }
 .btn {
