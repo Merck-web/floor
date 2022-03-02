@@ -18,9 +18,9 @@ function Carousel() {
           <div id='slide-1'>
             <img className={styles.img} src={images[0]} />
             <div className={styles.content}>
-              <p className={styles.title}><br/></p>
+              <p className={styles.title}>Мы</p>
               <div className={styles.description}>
-                Авторская флористическая мастерская RECENS, оказывает полный комплекс
+                Авторская флористическая мастерская RECENS, оказываем полный комплекс
                 услуг по обслуживанию компаний в Москве.
               </div>
               <Bid>Оставить заявку</Bid>
