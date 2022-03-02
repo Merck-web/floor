@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../../styles/Carousel.module.css";
 import Bid from "../Modal/Bid"
-
 function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
 

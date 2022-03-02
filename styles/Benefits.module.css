@@ -111,7 +111,7 @@
     position: absolute;
     left: calc((100% / 2) - 210px / 2);
     bottom: -20px;
-    z-index: 30;
+    z-index: 5;
   }
   .dots {
     width: 20px;

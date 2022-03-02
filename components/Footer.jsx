@@ -23,7 +23,7 @@ function Footer() {
         <Link href='https://www.instagram.com/cups_roses/'>
           <div className={styles.instagram}>
             <Instagram />
-            <div className={styles.instText}>@cups_roses</div>
+            <div className={styles.instText}>cups_roses</div>
           </div>
         </Link>
         <div className={styles.whatsapp}>
