@@ -37,8 +37,8 @@ a {
 .slick-dots {
   position: absolute;
   top: calc(90% - 3px);
-  left: 140px;
-  width: 120px;
+  left: calc(50% - 100px) !important;
+  width: 200px;
   height: 20px;
   font-size: 35px;
   max-width: 250px !important;
