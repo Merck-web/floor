@@ -50,10 +50,13 @@
   margin-right: 0;
 }
 .text {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .mobile {
   display: none;
+}
+.icon{
+  height: 100px;
 }
 @media (max-width: 1000px) {
   .row1 {
