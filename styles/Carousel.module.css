@@ -1,20 +1,30 @@
 .img {
   position: relative;
+  z-index: 1;
+}
+.carousel {
+  width: 100vw;
+}
+
+.item {
+  position: relative;
+  height: 604px;
 }
 .content {
   position: absolute;
   z-index: 10;
   top: 140px;
-  left: 190px;
+  left: 140px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 610px;
 }
 .title {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 85px;
   color: #ffffff;
   padding-bottom: 20px;
@@ -111,8 +121,8 @@
 }
 @media (max-width: 1200px) {
   .content {
-    top: 10px;
-    left: 34px;
+    top: calc(50% - 104px);
+    left: 60px;
   }
   .navigation {
     left: 34px;
@@ -120,7 +130,7 @@
   }
   .description2,
   .description {
-    max-width: 280px;
+    max-width: 400px;
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 20px;
@@ -135,6 +145,19 @@
   .capture {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .description2,
+  .description {
+    max-width: 300px;
+  }
+  .item {
+    height: 322px;
+  }
+  .title2,
+  .title {
+    font-size: 30px;
   }
 }
 @media (max-width: 600px) {
@@ -154,11 +177,21 @@
   }
 }
 @media (max-width: 460px) {
+  .item {
+    height: 234px;
+  }
   .content,
   .capture {
-    max-width: 185px;
+    width: 280px;
   }
   .btn {
     font-size: 12px;
+  }
+  .description2,
+  .description {
+    max-width: 240px;
+  }
+  .content {
+    left: 20px;
   }
 }

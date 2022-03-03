@@ -1,83 +1,69 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "../../styles/Carousel.module.css";
 import Bid from "../Modal/Bid";
-function Carousel() {
+import Slider from "react-slick";
+
+export default function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
-  useEffect(() => {
-    let a = window.location.hash.indexOf("#slide-");
-    if (a == -1) {
-      window.location = "#slide-1";
-    }
-    setInterval(() => {
-      let a = window.location.hash.indexOf("#slide-");
-      let b = +window.location.hash.slice(a + 7, a + 8);
-      let c = b % 4;
-      c += 1;
-      window.location = "#slide-" + c;
-    }, 10000);
-  });
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <>
-      <div className="slider">
-        <div className={styles.navigation}>
-          <a className={styles.dots} href="#slide-1"></a>
-          <a className={styles.dots} href="#slide-2"></a>
-          <a className={styles.dots} href="#slide-3"></a>
-          <a className={styles.dots} href="#slide-4"></a>
-        </div>
-        <div className="slides">
-          <div id="slide-1">
-            <img className={styles.img} src={images[0]} />
-            <div className={styles.content}>
-              <p className={styles.title}>Мы</p>
-              <div className={styles.description}>
-                Авторская флористическая мастерская RECENS, оказываем полный
-                комплекс услуг по обслуживанию компаний в Москве.
-              </div>
-              <Bid>Оставить заявку</Bid>
-              <div className={styles.capture}>
-                * Оставьте заявку сейчас и получите подарок !
-              </div>
+    <div className={styles.carousel}>
+      <Slider {...settings}>
+        <div className={styles.item}>
+          <img className={styles.img} src={images[0]} />
+          <div className={styles.content}>
+            <p className={styles.title}>Мы</p>
+            <div className={styles.description}>
+              Авторская флористическая мастерская RECENS, оказываем полный
+              комплекс услуг по обслуживанию компаний в Москве.
             </div>
-          </div>
-          <div id="slide-2">
-            <img className={styles.img} src={images[1]} />
-            <div className={styles.content}>
-              <div className={styles.title2}>Мы организуем</div>
-              <div className={styles.description2}>
-                Авторская флористическая мастерская, оказывает полный комплекс
-                услуг по обслуживанию компаний в Москве.
-              </div>
-              <Bid>Получить презентацию</Bid>
-            </div>
-          </div>
-          <div id="slide-3">
-            <img className={styles.img} src={images[2]} />
-            <div className={styles.content}>
-              <div className={styles.title2}>Мы разработаем</div>
-              <div className={styles.description2}>
-                индивидуальный стиль оформления для гостиниц, ресторанов,
-                магазинов, входных зон, а также продумаем и реализуем декор
-                кабинетов руководителей, персонала и переговорных комнат
-              </div>
-              <Bid>Получить презентацию</Bid>
-            </div>
-          </div>
-          <div id="slide-4">
-            <img className={styles.img} src={images[3]} />
-            <div className={styles.content}>
-              <div className={styles.title2}>Мы поможем и сделаем</div>
-              <div className={styles.description2}>
-                декор для Ваших корпоративных активностей: презентации,
-                выставки, мероприятия, дни рождения и другие различные праздники
-              </div>
-              <Bid>Получить презентацию</Bid>
+            <Bid>Оставить заявку</Bid>
+            <div className={styles.capture}>
+              * Оставьте заявку сейчас и получите подарок !
             </div>
           </div>
         </div>
-      </div>
-    </>
+        <div className={styles.item}>
+          <img className={styles.img} src={images[1]} />
+          <div className={styles.content}>
+            <div className={styles.title2}>Мы организуем</div>
+            <div className={styles.description2}>
+              Авторская флористическая мастерская, оказывает полный комплекс
+              услуг по обслуживанию компаний в Москве.
+            </div>
+            <Bid>Получить презентацию</Bid>
+          </div>
+        </div>
+        <div className={styles.item}>
+          <img className={styles.img} src={images[2]} />
+          <div className={styles.content}>
+            <div className={styles.title2}>Мы разработаем</div>
+            <div className={styles.description2}>
+              индивидуальный стиль оформления для гостиниц, ресторанов,
+              магазинов, входных зон, а также продумаем и реализуем декор
+              кабинетов руководителей, персонала и переговорных комнат
+            </div>
+            <Bid>Получить презентацию</Bid>
+          </div>
+        </div>
+        <div className={styles.item}>
+          <img className={styles.img} src={images[3]} />
+          <div className={styles.content}>
+            <div className={styles.title2}>Мы поможем и сделаем</div>
+            <div className={styles.description2}>
+              декор для Ваших корпоративных активностей: презентации, выставки,
+              мероприятия, дни рождения и другие различные праздники
+            </div>
+            <Bid>Получить презентацию</Bid>
+          </div>
+        </div>
+      </Slider>
+    </div>
   );
 }
-
-export default Carousel;
