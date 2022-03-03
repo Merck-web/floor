@@ -49,9 +49,9 @@
 .card:last-child {
   margin-right: 0;
 }
-.text {
+/* .text {
   margin-top: 40px;
-}
+} */
 .mobile {
   display: none;
 }
