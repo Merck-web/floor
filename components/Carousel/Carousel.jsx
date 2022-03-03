@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../../styles/Carousel.module.css";
-import Bid from "../Modal/Bid"
+import Bid from "../Modal/Bid";
 function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
-
+  useEffect(() => {
+    let a = window.location.hash.indexOf("#slide-");
+    if (a == -1) {
+      window.location = "#slide-1";
+    }
+    setInterval(() => {
+      let a = window.location.hash.indexOf("#slide-");
+      let b = +window.location.hash.slice(a + 7, a + 8);
+      let c = b % 4;
+      c += 1;
+      window.location = "#slide-" + c;
+    }, 10000);
+  });
   return (
     <>
-      <div className='slider'>
+      <div className="slider">
         <div className={styles.navigation}>
-          <a className={styles.dots} href='#slide-1'></a>
-          <a className={styles.dots} href='#slide-2'></a>
-          <a className={styles.dots} href='#slide-3'></a>
-          <a className={styles.dots} href='#slide-4'></a>
+          <a className={styles.dots} href="#slide-1"></a>
+          <a className={styles.dots} href="#slide-2"></a>
+          <a className={styles.dots} href="#slide-3"></a>
+          <a className={styles.dots} href="#slide-4"></a>
         </div>
-
-        <div className='slides'>
-          <div id='slide-1'>
+        <div className="slides">
+          <div id="slide-1">
             <img className={styles.img} src={images[0]} />
             <div className={styles.content}>
               <p className={styles.title}>Мы</p>
               <div className={styles.description}>
-                Авторская флористическая мастерская RECENS, оказываем полный комплекс
-                услуг по обслуживанию компаний в Москве.
+                Авторская флористическая мастерская RECENS, оказываем полный
+                комплекс услуг по обслуживанию компаний в Москве.
               </div>
               <Bid>Оставить заявку</Bid>
               <div className={styles.capture}>
@@ -29,7 +40,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-2'>
+          <div id="slide-2">
             <img className={styles.img} src={images[1]} />
             <div className={styles.content}>
               <div className={styles.title2}>Мы организуем</div>
@@ -40,7 +51,7 @@ function Carousel() {
               <Bid>Получить презентацию</Bid>
             </div>
           </div>
-          <div id='slide-3'>
+          <div id="slide-3">
             <img className={styles.img} src={images[2]} />
             <div className={styles.content}>
               <div className={styles.title2}>Мы разработаем</div>
@@ -52,7 +63,7 @@ function Carousel() {
               <Bid>Получить презентацию</Bid>
             </div>
           </div>
-          <div id='slide-4'>
+          <div id="slide-4">
             <img className={styles.img} src={images[3]} />
             <div className={styles.content}>
               <div className={styles.title2}>Мы поможем и сделаем</div>
