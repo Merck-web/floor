@@ -206,6 +206,6 @@
     grid-template-columns: 80px 100px auto;
   }
   .text::before {
-    left: -3px;
+    left: -10px;
   }
 }
