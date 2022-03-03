@@ -43,10 +43,10 @@ a {
   font-size: 35px;
 }
 .slick-next {
-  right: calc(0px + 5%);
+  right: calc(0px + 5%)  !important;
 }
 .slick-prev {
-  left: calc(0px + 5%);
+  left: calc(0px + 5%)  !important;
 }
 .slick-dots li button:before {
   content: '' !important;
