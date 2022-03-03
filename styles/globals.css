@@ -24,7 +24,7 @@ a {
   margin-top: 30px;
   position: absolute;
   bottom: 0;
-  left: calc(50% - 110px);
+  left: calc(50% - 110px) !important;
   width: 225px;
   height: 20px;
 }
@@ -34,10 +34,10 @@ a {
 .slick-list {
   max-width: 100%;
 }
-.slick-dots {
+.mainslider .slick-dots {
   position: absolute;
   top: calc(90% - 3px);
-  left: calc(50% - 100px) !important;
+  left: calc(50% - 125px) !important;
   width: 200px;
   height: 20px;
   font-size: 35px;
