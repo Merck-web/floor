@@ -14,18 +14,6 @@ export default function Carousel() {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
-    cssEase: "linear",
-    customPaging: i => (
-      <div
-        style={{
-          width: "30px",
-          color: "#FF4E6D",
-          height: "30px"
-        }}
-      >
-        →
-      </div>
-    )
   };
   return (
     <div className={styles.carousel}>

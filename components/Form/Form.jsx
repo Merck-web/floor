@@ -60,9 +60,9 @@ function Form() {
             />
             <label>
               {/* https://tilda.education/articles-personal-data-law */}
-              Согласен с
+              Согласен с <bt />
               <a href='https://tilda.education/articles-personal-data-law'>
-                <a>правилами</a>
+                <span>правилами</span><br />
               </a>
               обработки персональных данных
             </label>

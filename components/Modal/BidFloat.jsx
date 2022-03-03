@@ -52,7 +52,7 @@ export default function Example({ children }) {
                   <iframe
                     className='w-full h-71'
                     scrolling='no'
-                    allowtransparency
+                    allowtransparency={false}
                     src='https://forms.amocrm.ru/forms/html/form_899389_83a82e9f9d3c37b7266c37f7a58d20df.html?date=1646224165#{"user_origin":{"datetime":"Wed Mar 02 2022 15:29:25 GMT+0300 (Москва, стандартное время)","referer":""},"is_modal":false,"success_message":"","has_redirect":"","is_dark_bg":true,"utm":{"source":"","medium":"","content":"","campaign":"","term":""},"ga":{},"location":"http://localhost:3000/","dp":{}}'></iframe>
                 </div>
               </div>
