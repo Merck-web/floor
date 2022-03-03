@@ -26,7 +26,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons5 />
+                <div className={styles.icon}><BenefitsIcons5 /></div>
                 <div className={styles.text}>
                   Крупнейший <br /> ассортиментов цветов в <br /> Москве и
                   Московской области
@@ -37,7 +37,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons4 />
+                <div className={styles.icon}><BenefitsIcons4 /></div>
                 <div className={styles.text}>
                   Индивидуальный <br /> подход каждому <br /> клиенту
                 </div>
@@ -47,7 +47,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons7 />
+                <div className={styles.icon}><BenefitsIcons7 /></div>
                 <div className={styles.text}>
                   Стилизация под ваш корпоративный стиль или мероприятие
                 </div>
@@ -57,7 +57,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons6 />
+                <div className={styles.icon}><BenefitsIcons6 /></div>
                 <div className={styles.text}>
                   Гарантированные подарки и <br /> скидки новым и постоянным
                   клиентам
@@ -68,7 +68,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons1 />
+                <div className={styles.icon}><BenefitsIcons1 /></div>
                 <div className={styles.text}>
                   Отсрочка <br /> платежа
                 </div>
@@ -78,7 +78,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons3 />
+                <div className={styles.icon}><BenefitsIcons3 /></div>
                 <div className={styles.text}>
                   Всегда свежие <br /> цветы
                 </div>
@@ -88,7 +88,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <BenefitsIcons2 />
+                <div className={styles.icon}></div><BenefitsIcons2 />
                 <div className={styles.text}>
                   Гибкая системы <br /> оплаты
                 </div>
