@@ -50,7 +50,7 @@
   margin-right: 0;
 }
 .text {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .mobile {
   display: none;
@@ -96,6 +96,9 @@
   }
   .mobile {
     display: block;
+  }
+  .text {
+    margin-top: 0;
   }
   .container {
     padding: 10px 0;

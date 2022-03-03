@@ -88,7 +88,7 @@ export default function Carousel() {
           <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
-                <div className={styles.icon}></div><BenefitsIcons2 />
+                <div className={styles.icon}><BenefitsIcons2 /></div>
                 <div className={styles.text}>
                   Гибкая системы <br /> оплаты
                 </div>
