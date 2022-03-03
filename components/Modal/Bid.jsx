@@ -45,9 +45,9 @@ export default function Example({ children }) {
               <div className='relative inline-block align-middle bg-transparent overflow-hidden transform transition-all sm:max-w-sm sm:w-full'>
                 <div>
                   <div
-                    className='absolute top-4 cursor-pointer  right-10'
+                    className='absolute top-4 cursor-pointer right-10 text-gray-300'
                     onClick={() => setOpen(false)}>
-                    <CloseIcon />
+                    <CloseIcon className="h-5 w-5"/>
                   </div>
                   <iframe
                     className='w-full h-71'
