@@ -2,14 +2,16 @@ import React from "react";
 import Instagram from "../../styles/img/Instagram.svg";
 import styles from "../../styles/Header.module.css";
 import Link from "next/link";
-import Bid from "../Modal/Bid"
-import BidFloat from "../Modal/BidFloat"
+import Bid from "../Modal/Bid";
+import BidFloat from "../Modal/BidFloat";
 
 function Modal() {
   return (
     <>
       <div className={styles.modal}>
-        <div className={styles.btnModal}>Оставить заявку</div>
+        <div className={styles.btnModal}>
+        <Bid>Оставить заявку</Bid>
+        </div>
         <ul className={styles.list}>
           <li>
             <BidFloat>

@@ -37,15 +37,25 @@ a {
 }
 .slick-dots {
   position: absolute;
-  top: calc(90% - 20px);
+  top: calc(90% - 3px);
   left: 140px;
-  width: 125px;
+  width: 120px;
+  height: 20px;
+  font-size: 35px;
+}
+.form-check-input:checked{
+  accent-color: #FF4E6D;
+}
+.custom-checkbox{
+  background-color: rgba(0, 255, 0, .8);
+  position: relative;
+  width: 15px;
+  height: 15px;
 }
 .slick-dots li button:before {
-  content: "";
   width: 20px;
   height: 3px;
-  background-color: #202124;
+  background-color: #202124 !important;
 }
 .slick-dots li.slick-active button:before {
   background-color: #ff4e6d;
@@ -55,7 +65,7 @@ img {
   height: 100% !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .slick-dots {
     top: calc(105% - 20px);
     left: calc(50% - 62px);

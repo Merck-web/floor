@@ -15,16 +15,16 @@ function Form() {
   const { errors } = formState;
 
   async function onSubmit(dataAll) {
-    console.log(dataAll.name, dataAll.mail,dataAll.phone);
+    console.log(dataAll.name, dataAll.mail, dataAll.phone);
 
     if (dataAll.acceptTerms) {
       await axios.post(`api/email`, {
         name: dataAll.name,
         email: dataAll.mail,
-        phone: dataAll.phone
+        phone: dataAll.phone,
       });
     } else {
-      alert("SUCCESS!! :-)\n\n" + JSON.stringify(dataAll, null, 4));
+      alert("Что то пошло не так!! :-)\n\n");
     }
     reset();
     return false;
@@ -59,8 +59,12 @@ function Form() {
               }`}
             />
             <label>
-            {/* https://tilda.education/articles-personal-data-law */}
-              Согласен с <a href="https://tilda.education/articles-personal-data-law"><a>правилами</a></a> обработки персональных данных
+              {/* https://tilda.education/articles-personal-data-law */}
+              Согласен с
+              <a href='https://tilda.education/articles-personal-data-law'>
+                <a>правилами</a>
+              </a>
+              обработки персональных данных
             </label>
           </div>
           <button type='submit' className={styles.btn}>

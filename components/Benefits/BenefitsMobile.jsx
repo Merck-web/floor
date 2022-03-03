@@ -17,6 +17,17 @@ export default function Carousel() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    customPaging: i => (
+      <div
+        style={{
+          width: "30px",
+          color: "#FF4E6D",
+          height: "30px"
+        }}
+      >
+        →
+      </div>
+    )
   };
   return (
     <div className="benefits">
