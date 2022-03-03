@@ -1,6 +1,7 @@
 .img {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .carousel {
   width: 100vw;

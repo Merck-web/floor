@@ -7,23 +7,23 @@ import BenefitsIcons4 from "../../styles/img/3 block/4.svg";
 import BenefitsIcons5 from "../../styles/img/3 block/5.svg";
 import BenefitsIcons6 from "../../styles/img/3 block/6.svg";
 import BenefitsIcons7 from "../../styles/img/3 block/7.svg";
+import Slider from "react-slick";
 
-function Carousel() {
+export default function Carousel() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
-    <>
-      <div className='slider'>
-        <div className={styles.navigation}>
-          <a className={styles.dots} href='#slide-10'></a>
-          <a className={styles.dots} href='#slide-20'></a>
-          <a className={styles.dots} href='#slide-30'></a>
-          <a className={styles.dots} href='#slide-40'></a>
-          <a className={styles.dots} href='#slide-50'></a>
-          <a className={styles.dots} href='#slide-60'></a>
-          <a className={styles.dots} href='#slide-70'></a>
-        </div>
-
-        <div className='mobile-slides'>
-          <div id='slide-10'>
+    <div className="benefits">
+      <div className={styles.carousel}>
+        <div className={styles.title}>Комплексная флористика для компаний</div>
+        <Slider {...settings}>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons5 />
@@ -34,7 +34,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-20'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons4 />
@@ -44,7 +44,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-30'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons7 />
@@ -54,7 +54,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-40'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons6 />
@@ -65,7 +65,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-50'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons1 />
@@ -75,7 +75,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-60'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons3 />
@@ -85,7 +85,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div id='slide-70'>
+          <div className={styles.item}>
             <div className={styles.content}>
               <div className={styles.card}>
                 <BenefitsIcons2 />
@@ -95,10 +95,8 @@ function Carousel() {
               </div>
             </div>
           </div>
-        </div>
+        </Slider>
       </div>
-    </>
+    </div>
   );
 }
-
-export default Carousel;

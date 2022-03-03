@@ -11,6 +11,7 @@ export default function Carousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false
   };
   return (
     <div className={styles.carousel}>
