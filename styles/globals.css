@@ -41,6 +41,7 @@ a {
   width: 120px;
   height: 20px;
   font-size: 35px;
+  max-width: 250px !important;
 }
 .slick-next {
   right: calc(0px + 5%)  !important;
@@ -71,6 +72,6 @@ img {
 @media (max-width: 768px) {
   .slick-dots {
     top: calc(105% - 20px);
-    left: 0px;
+    left: -10px;
   }
 }
