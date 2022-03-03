@@ -36,7 +36,7 @@ export default function Example() {
                   leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                   leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <div className="relative inline-block align-bottom bg-transparent overflow-hidden transform transition-all sm:align-middle sm:max-w-sm sm:w-full">
+                <div className="relative inline-block align-middle bg-transparent overflow-hidden transform transition-all sm:max-w-sm sm:w-full">
                   <div>
                     <iframe className="w-full h-70" scrolling="no" allowtransparency src='https://forms.amocrm.ru/forms/html/form_906022_6ca2a840719a84958d6968d92a9174a1.html?date=1646220235#{"user_origin":{"datetime":"Wed Mar 02 2022 14:23:55 GMT+0300 (Москва, стандартное время)","referer":"http://localhost:3000/"},"is_modal":false,"success_message":"","has_redirect":"","is_dark_bg":true,"utm":{"source":"","medium":"","content":"","campaign":"","term":""},"ga":{},"location":"http://localhost:3000/","dp":{}}'></iframe>
                   </div>
