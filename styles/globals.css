@@ -71,6 +71,6 @@ img {
 @media (max-width: 768px) {
   .slick-dots {
     top: calc(105% - 20px);
-    left: 0px;
+    left: -10px;
   }
 }
