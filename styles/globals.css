@@ -49,10 +49,11 @@ a {
   left: calc(0px + 5%);
 }
 .slick-dots li button:before {
-  content: '';
-  width: 20px;
-  height: 3px;
+  content: '' !important;
+  width: 20px !important;
+  height: 3px !important;
   background-color: #202124 !important;
+  border-radius: 2px !important;
 }
 .slick-dots li.slick-active button:before {
   content: '';
@@ -70,6 +71,6 @@ img {
 @media (max-width: 768px) {
   .slick-dots {
     top: calc(105% - 20px);
-    left: calc(50% - 62px);
+    left: 0px;
   }
 }
