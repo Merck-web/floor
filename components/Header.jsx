@@ -29,9 +29,9 @@ function Header() {
   const handleBurgerMenu = () => {
     setBurger(!burger);
     if (burger == true) {
-      document.html.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
-      document.html.style.overflow = "visible";
+      document.body.style.overflow = "visible";
     }
   };
 
