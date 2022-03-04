@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91bb988-dbff-49bd-93cc-14279f4ea9ff" name="Changes" comment="faet: Обратный звонок">
-      <change afterPath="$PROJECT_DIR$/components/Best/Modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Modal/Bid.jsx" afterDir="false" />
+    <list default="true" id="c91bb988-dbff-49bd-93cc-14279f4ea9ff" name="Changes" comment="fix: положение модальных окон в мобильной версии">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Best/Best.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Best/Best.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Carousel/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Carousel/Carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Modal/Call.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/Call.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Benefits/BenefitsMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Benefits/BenefitsMobile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/Bid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/Bid.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/BidFloat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/BidFloat.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +38,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Modal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEV.WEB\Nyoka\floor\components\Modal" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -75,6 +83,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.up" />
       </list>
     </recent_temporary>
@@ -94,7 +103,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646210666428</updated>
-      <workItem from="1646210668103" duration="12646000" />
+      <workItem from="1646210668103" duration="20738000" />
+      <workItem from="1646297172507" duration="4297000" />
     </task>
     <task id="LOCAL-00002" summary="fix: отправка писем не отдельный сервер">
       <created>1646212728648</created>
@@ -110,7 +120,84 @@
       <option name="project" value="LOCAL" />
       <updated>1646213689326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: Модалки">
+      <created>1646226715290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646226715290</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: Падала сборка">
+      <created>1646228081964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646228081964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: link doc">
+      <created>1646228724403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646228724403</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: мелкие правки">
+      <created>1646230459696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646230459696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: мелкие правки">
+      <created>1646230596559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646230596559</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: мелкие правки&#10;feat: add yandex metric">
+      <created>1646231105029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646231105029</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: мелкие правки заказчика">
+      <created>1646233227525</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646233227525</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: мелкие правки заказчика по лого">
+      <created>1646233650596</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1646233650596</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: align-items">
+      <created>1646234037607</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646234037607</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: правки заказчика">
+      <created>1646234136442</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646234136442</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: положение модальных окон в мобильной версии">
+      <created>1646298382754</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646298382754</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +231,16 @@
     <MESSAGE value="fix: отправка писем не отдельный сервер" />
     <MESSAGE value="fix: Обратный звонок" />
     <MESSAGE value="faet: Обратный звонок" />
-    <option name="LAST_COMMIT_MESSAGE" value="faet: Обратный звонок" />
+    <MESSAGE value="feat: Модалки" />
+    <MESSAGE value="fix: Падала сборка" />
+    <MESSAGE value="fix: link doc" />
+    <MESSAGE value="fix: мелкие правки" />
+    <MESSAGE value="fix: мелкие правки&#10;feat: add yandex metric" />
+    <MESSAGE value="fix: мелкие правки заказчика" />
+    <MESSAGE value="fix: мелкие правки заказчика по лого" />
+    <MESSAGE value="fix: align-items" />
+    <MESSAGE value="fix: правки заказчика" />
+    <MESSAGE value="fix: положение модальных окон в мобильной версии" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: положение модальных окон в мобильной версии" />
   </component>
 </project>

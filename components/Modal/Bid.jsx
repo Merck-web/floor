@@ -14,7 +14,7 @@ export default function Example({ children }) {
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as='div'
-          className='fixed  z-10 inset-0 overflow-y-auto'
+          className='fixed  z-20 inset-0 overflow-y-auto'
           onClose={setOpen}>
           <div className='flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0'>
             <Transition.Child
@@ -45,9 +45,9 @@ export default function Example({ children }) {
               <div className='relative inline-block align-middle bg-transparent overflow-hidden transform transition-all sm:max-w-sm sm:w-full'>
                 <div>
                   <div
-                    className='absolute top-4 cursor-pointer  right-10'
+                    className='absolute top-4 cursor-pointer right-10 text-gray-300'
                     onClick={() => setOpen(false)}>
-                    <CloseIcon />
+                    <CloseIcon className="h-5 w-5"/>
                   </div>
                   <iframe
                     className='w-full h-71'
