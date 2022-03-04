@@ -91,6 +91,7 @@
 }
 @media (max-width: 664px) {
   .footer {
+    height: 256px !important;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
