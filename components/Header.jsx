@@ -29,9 +29,11 @@ function Header() {
   const handleBurgerMenu = () => {
     setBurger(!burger);
     if (burger == true) {
-      document.body.style.overflow = "hidden";
+      const html = document.querySelector("html");
+      html.style.overflow = "auto";
     } else {
-      document.body.style.overflow = "visible";
+      const html = document.querySelector("html");
+      html.style.overflow = "hidden";
     }
   };
 
