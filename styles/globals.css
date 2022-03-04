@@ -61,7 +61,7 @@ a {
   border-radius: 2px;
 }
 .form-check-input:checked{
-  accent-color: #FF4E6D;
+  accent-color: #FF4E6D !important;
 }
 
 img {
