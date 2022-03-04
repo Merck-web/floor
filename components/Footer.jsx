@@ -20,10 +20,10 @@ function Footer() {
         <a href='mailto:info@recens.flowers' className={styles.mail}>
           info@recens.flowers
         </a>
-        <Link href='https://www.instagram.com/cups_roses/'>
+        <Link href='https://www.instagram.com/recens.flowers/'>
           <div className={styles.instagram}>
             <Instagram />
-            <div className={styles.instText}>cups_roses</div>
+            <div className={styles.instText}>@recens.flowers</div>
           </div>
         </Link>
         <div className={styles.whatsapp}>
